@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px) {
+
+
+    .header {
+        width: 250px;
+        height: 100px;
+        background-color: rgb(0, 42, 255)
+    
+    }
+    
+    
+    .right {
+        width: 100px;
+        height: 250px;
+        background-color: rgb(255, 0, 0);
+        
+    }
+    
+    .footer {
+        width: 250px;
+        height: 100px;
+        background-color: rgb(255, 157, 0);
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+
+
+    .header {
+        width: 150px;
+        height: 100px;
+        background-color: rgb(55, 0, 255)
+    
+    }
+    
+    
+    .right {
+        width: 75px;
+        height: 250px;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .left {
+        width: 75px;
+        height: 250px;
+        background-color:  rgb(0, 255, 251);
+        
+    }
+    
+    .footer {
+        width: 150px;
+        height: 100px;
+        background-color: rgb(255, 157, 0);
+    }
+
+
+
+}

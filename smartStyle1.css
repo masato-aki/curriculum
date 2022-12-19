@@ -27,33 +27,46 @@
 @media screen and (max-width: 479px) {
 
 
-    .header {
-        width: 150px;
-        height: 100px;
-        background-color: rgb(55, 0, 255)
+
+        .wrapper {
+            width: 400px;
+        }
+    
+        .left {
+            width: 200px;
+            height: 500px;
+        }
+    
+        .left-upper {
+            width: 90px;
+            height: 60px;
+        }
+    
+        .left-lower {
+            width: 90px;
+            height: 320px;
+        }
+    
+        .center {
+            float: none; 
+            width: 200px;
+        }
+    
+        .right {
+            width: 50%;
+        }
+    
+        .right-inner {
+            width: 110px;
+        }
+    
+        .right-inner-text {
+            font-size: 5px;
+            padding: 10px;
+            background-color: orange;
+            border: 5px solid red;
+        }
     
     }
     
-    
-    .right {
-        width: 75px;
-        height: 250px;
-        background-color: rgb(255, 0, 0);
-    }
 
-    .left {
-        width: 75px;
-        height: 250px;
-        background-color:  rgb(0, 255, 251);
-        
-    }
-    
-    .footer {
-        width: 150px;
-        height: 100px;
-        background-color: rgb(255, 157, 0);
-    }
-
-
-
-}

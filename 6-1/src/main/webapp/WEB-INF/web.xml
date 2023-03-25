@@ -1,0 +1,15 @@
+<welcome-file-list>
+ <welcome-file>select.html</welcome-file>
+ </welcome-file-list>
+ <servlet>
+ <servlet-name>select</servlet-name>
+ <!--問① サーブレットのクラス名を入れてください。-->
+ <servlet-class>SelectServlet</servlet-class>
+ </servlet>
+ 
+ 
+ <servlet-mapping>
+ <servlet-name>select</servlet-name>
+ <!--問② URLパターンを記述してください。-->
+ <url-pattern>/sample</url-pattern>
+ </servlet-mapping

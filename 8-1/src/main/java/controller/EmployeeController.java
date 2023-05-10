@@ -13,10 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import service.EmployeeService;
+import service.EmployeeService; 
 
- 
-@SuppressWarnings("unused")
 public class EmployeeController extends HttpServlet {
  public void doPost(HttpServletRequest request, HttpServletResponse response)
  throws ServletException, IOException {
@@ -36,7 +34,7 @@ public class EmployeeController extends HttpServlet {
   // 問③ EmployeeBeanに、EmployeeServiceよりsearch関数を呼び出し、返り値を格納する。
     emps.search(id, password);
   // 問④ nullの部分に適切な引数をセットする。
- request.setAttribute("EmployeeBean", id);
+ request.setAttribute("EmployeeBean", null);
  
  } catch (Exception e) {
  e.printStackTrace();

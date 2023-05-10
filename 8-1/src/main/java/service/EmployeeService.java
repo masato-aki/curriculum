@@ -13,8 +13,7 @@ import bean.EmployeeBean;
  
 /**
  * ・社員情報検索サービス
- */
- 
+ */ 
 public class EmployeeService {
  
   // 問① 接続情報を記述してください
@@ -71,7 +70,7 @@ private static final String SQL = null;
  preparedStatement.setString(1, login_time);
  preparedStatement.setString(2, id);
   // 問⑤ UPDATEを実行する文を記述
- preparedStatement.executeUpdate(SQL);
+ preparedStatement.executeUpdate(SQL_UPDATE);
  /*
  * UPDATEが成功したものを即座に表示
  * 任意のユーザーを検索できるように、プリペアドステートメントを記述。
@@ -85,12 +84,12 @@ private static final String SQL = null;
  
  while (resultSet.next()) {
   resultSet.getString("name");
- resultSet.getString("comment");
- resultSet.getString("login_time");
+  resultSet.getString("comment");
+  resultSet.getString("login_time");
  
   // 問⑧ EmployeeBeanに取得したデータを入れてください。
  employeeDate = new EmployeeBean();
- employeeDate.setName("tmpNam");
+ employeeDate.setName("tmpName");
  employeeDate.setComment("tmpComment");
  employeeDate.setLogin_Time("tmpLoginTime");
  }

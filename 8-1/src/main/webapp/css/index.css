@@ -10,7 +10,7 @@
  width: 400pX;
  text-align: left;
  /* 問① 背景を青色にする */
- background-color: black;
+ background-color: blue;
  /* 問② 文字の色を白にする */
  color: white;
  /* 問③ 背景に対して文字を縦方向に中央揃え */
@@ -49,7 +49,7 @@ ul li.pass {
  /* 問④ 背景を青色にする */
  background-color: blue;
  /* 問⑤ 文字の色を白にする */
- color: deeppink;
+ color: white;
  /* 問p⑥ 背景に対して文字を縦方向に中央揃え */
  display: flex;
  align-items: center;

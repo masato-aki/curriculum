@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        th, td {
+            padding : 10px;
+        }
+
+        #japan {
+        display: none;
+      }
+      #japan.show {
+        display: block;
+      }
+      #english {
+        display: none;
+      }
+      #english.show {
+        display: block;
+      }
+
+    </style>
+</head>
+<body>
+    <select onchange="changeLang(event)">
+        <option id="select">選択してください</option>
+        <option id="selected_jpn" value="ja">日本語</option>
+        <option id="selected_en" value="en">English</option>
+        <option id="selected_all" value="all">全て表示</option>
+    </select>
+    <table>
+        <tr id="japan">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr id="english">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
+    <script>
+        //①onchangeで使用されている関数の中身を実装してください。
+        function changeLang(event) {
+        const value = event.target.value;
+        
+        const ja = document.getElementById('japan')
+        const en = document.getElementById('english')
+
+        if( value == 'ja') {
+          ja.classList.add('show');
+          en.classList.remove('show')
+        }
+        if( value == 'en') {
+          en.classList.add('show');
+          ja.classList.remove('show')
+        }
+        if( value == 'all' ) {
+          en.classList.add('show');
+          ja.classList.add('show')
+        }
+      }
+    </script>
+</body>
+</html>

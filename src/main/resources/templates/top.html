@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8" />
+    <title>メニュー画面</title>
+</head>
+<body>
+<h2>こんにちは</h2>
+<div th:fragment="logout" sec:authorize="isAuthenticated()">
+    <p>こんにちは:
+        <span sec:authentication="name"></span>さん</p>
+    <p>mail:
+        <span sec:authentication="principal.mailAddress"></span></p>
+    <p>権限:
+        <span sec:authentication="principal.authorities"></span></p>
+    <form action="#" th:action="@{/logout}" method="post">
+        <input type="submit" value="ログアウト" />
+    </form>
+</div>
+</body>
+</html>
